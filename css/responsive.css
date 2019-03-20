@@ -753,7 +753,7 @@
     }
 
     .good-news__image {
-        bottom: -54%;
+        bottom: -58%;
     }
 
     .cards-recipe__title {
@@ -1011,11 +1011,19 @@
     .header__cards {
         padding: 0 0 4rem 0;
         width: 100%;
+        background: url(../image/card-mob-screen.png) no-repeat bottom center;
         background-size: cover;
         background-position: bottom center;
     }
     .header__list li {
         padding: 0.8rem 1.4rem;
+    }
+    .label-checkbox,
+    .header__cards>p {
+        font-size: 1.2rem;;
+    }
+    .header__cards_title {
+        text-transform: uppercase;
     }
 
     .good-news .col-12 {
