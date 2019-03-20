@@ -145,8 +145,13 @@
         width: 100%;
     }
     .btn-play>.arrow {
-        bottom: 7%;
+        bottom: 15%;
         right: -100%;
+        width: 10.5rem;
+    }
+
+    .btn-play>.arrow>img {
+        width: 30%;
     }
 
     .good-news__content {
@@ -364,7 +369,204 @@
     }
 }
 
-@media only screen and (max-width: 991.8px) {}
+@media only screen and (max-width: 991.8px) {
+    html {
+        font-size: 15px;
+    }
+
+    .header {
+        background: url(../image/banner-first-screen-768.png) no-repeat center right / cover;
+    }
+
+    .menu li {
+        margin-right: 2.6rem;
+    }
+    .logo {
+        width: 6rem;
+    }
+
+    .header__cards>p {
+        padding: 0px 1rem;
+    }
+
+    .header__list li {
+        padding: 0.8rem 1.4rem;
+    }
+
+    .header__title {
+        margin-bottom: 1rem;
+        font-size: 3.2rem;
+    }
+
+    .header__cards {
+        padding: 0 8px 3rem 8px;
+    }
+
+    .btn-play>.arrow {
+        bottom: 21%;
+        width: 9.5rem;
+    }
+
+    .good-news {
+        background: url(../image/image-bg.png) no-repeat bottom left -20%;
+        background-size: 50%;
+    }
+
+    .good-news__content::after {
+        right: 0;
+        bottom: auto;
+        top: -4rem;
+        width: 7.1rem;
+        height: 6rem;
+        transform: rotate(-9deg);
+        -webkit-transform: rotate(-9deg);
+        -moz-transform: rotate(-9deg);
+        -ms-transform: rotate(-9deg);
+        -o-transform: rotate(-9deg);
+    }
+    .good-news__content {
+        margin-bottom: 14rem;;
+    }
+
+    .good-news__image {
+        left: 2rem;
+        bottom: -82%;
+        width: 70%;
+    }
+
+    .good-news__image-bg {
+        display: none;
+    }
+
+    .cards-recipe__item {
+        min-height: 17rem;
+    }
+
+    .cards-recipe__img {
+        width: 4.58rem;
+        margin: 0 auto 1rem;
+    }
+
+    .cards-recipe__box.fs-24 {
+        font-size: 1.1rem;
+    }
+    .cards-recipe__item.fs-19 {
+        font-size: 0.75rem;
+    }
+
+    .our-feel {
+        background-size: 59rem;
+        padding: 4rem 0;
+    }
+
+    .basics-program__content {
+        margin-left: 0;
+    }
+
+    .not {
+        left: 41%;
+    }
+
+    .how-it-work__item {
+        width: 48%;
+        padding: 3.7rem 2rem 2.1rem;
+    }
+
+    .program-not__title .not {
+        left: 55%;
+    }
+
+    .reviews-customer__img>div {
+        padding: 1.4rem 1.3rem;
+    }
+
+    .slider {
+        width: 96%;
+    }
+
+    .slider__items {
+        align-items: center;
+    }
+
+    .slick-next {
+        right: -1.5rem;
+    }
+
+    .slick-prev {
+        left: -1.5rem;
+    }
+
+    .reviews-customer__text {
+        width: 65%;
+    }
+
+    .fast-result__img {
+        right: -35px;
+    }
+
+    .program-criteria {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .program-criteria::before, .program-criteria::after {
+        width: 6rem;
+        height: 16rem;
+    }
+
+    .program-criteria::after {
+        right: -4.4rem;
+    }
+
+    .program-criteria::before {
+        left: -4.2rem;
+    }
+
+    .fast-result::before {
+        right: 0;
+    }
+
+    .price__btn {
+        padding: 0 0.5rem;
+    }
+
+    .price__btn > span {
+        position: static;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    .price__conditions li {
+        padding: 1rem 2.6rem;
+    }
+
+    .price__conditions li::after {
+        left: auto;
+        right: 1rem;
+    }
+
+    .price__conditions li::before {
+        left: 1rem;
+    }
+
+    .accordion__title > p {
+        width: 80%;
+    }
+
+    .questions-answers {
+        margin-bottom: 3rem;
+    }
+
+    .leave-question {
+        background: url(../image/banner-last-screen-768.png) no-repeat bottom center / cover;
+        padding: 1.5rem 0 2rem;
+    }
+}
 
 @media only screen and (max-width: 767.8px) {}
 
