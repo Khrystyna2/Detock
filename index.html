@@ -25,25 +25,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav>
-                        <div class="top-menu d-flex align-items-center">
+                    <nav class="nav-menu">
+                        <div class="btn-menu">
+                            <span>
+                                    <svg width="20" height="14" viewBox="0 0 20 14" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="20" height="2" rx="1"/>
+                                        <rect y="6" width="20" height="2" rx="1"/>
+                                        <rect y="12" width="14.4" height="2" rx="1"/>
+                                        </svg>
+                            </span>
+                            Меню
+                        </div>
+                        <div class="top-menu">
                             <ul class="menu">
                                 <li><a href="#">Программа</a></li>
                                 <li><a href="#">Основатель</a></li>
                             </ul>
                             <ul class="menu">
                                 <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Подарок</a></li>
+                                <li style="border: none;"><a href="#">Подарок</a></li>
                             </ul>
+                            <a href="#" class="top-menu__gift text-center">
+                                <img src="icons/gift.svg" alt="gift">
+                                Получить подарок
+                            </a>
                         </div>
                     </nav>
                     <a href="#" class="logo"><img src="image/logo.svg" alt=""></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-2 col-xl-4 align-self-end">
+                <div class="col-12 col-md-2 col-xl-4 align-self-end order-2 order-md-0">
                     <div class="btn-play">
                         <img src="icons/btn-play.svg" alt="">
+                        <span>Видео-знакомство</span>
                         <div class="arrow d-flex align-items-end"><img src="icons/arrow.svg" alt=""> Давайте
                             <br>знакомиться!</div>
                     </div>
@@ -60,7 +75,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-xl-4">
+                <div class="col-12 col-md-5 col-xl-4 order-2 order-md-2 ">
                     <div class="header__cards">
                         <div class="header__cards_title title-light-red text-center">
                             <p>Узнать жизненные показатели своего самочувствия</p>

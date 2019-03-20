@@ -468,7 +468,9 @@ body {
     position: relative;
     cursor: pointer;
 }
-
+.btn-play >span {
+    display: none;
+}
 .btn-play>.arrow {
     position: absolute;
     bottom: -10%;
@@ -483,6 +485,10 @@ body {
     margin-right: 0.4rem;
 }
 
+.btn-menu {
+    display: none;
+}
+
 .top-menu {
     background-color: #8CC63F;
     width: 100%;
@@ -493,6 +499,8 @@ body {
     -ms-border-radius: 0px 0px 40px 40px;
     -o-border-radius: 0px 0px 40px 40px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -508,6 +516,10 @@ body {
 
 .menu li a {
     color: #fff;
+}
+
+.top-menu__gift {
+    display: none;
 }
 
 .logo {
@@ -1010,7 +1022,7 @@ body {
     top: 50%;
     right: -2.5rem;
     width: 20px;
-    height: 50px;
+    height: 2.6rem;
     padding: 0;
     cursor: pointer;
     color: transparent;
