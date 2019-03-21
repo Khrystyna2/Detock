@@ -356,24 +356,8 @@ h6 {
     position: relative;
 }
 
-.title-section>span.span-line,
-.header__title>span.span-line {
-    padding: 0 .4rem;
-}
-
-.title-section>span.span-line::before,
-.title-section>span.span-line::after,
-.header__title>span.span-line::before,
-.header__title>span.span-line::after {
-    content: '-';
-}
-.title-section>span.span-line::after,
-.header__title>span.span-line::after {
-    padding-left: 0.8rem;
-}
-.title-section>span.span-line::before,
-.header__title>span.span-line::before {
-    padding-right: 0.6rem;
+.title-section>br.no{
+    display: none;
 }
 
 html {
@@ -1775,12 +1759,7 @@ background: linear-gradient(325.65deg, #FFE5E1 20.69%, #FFECE9 92.98%)
     font-weight: 700;
 }
 
-.price__price p {
-    width: 46%;
-    margin: 0 auto;
-}
-
-.price__price p>span {
+.price__price ul li>span {
     color: #828282;
     display: inline-block;
     width: 5.8rem;

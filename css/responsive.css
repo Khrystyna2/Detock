@@ -333,11 +333,6 @@
         bottom: -2.7rem;
     }
 
-    .price__price p {
-        width: auto;
-        margin-left: 20%;
-    }
-
     .for-14day-program {
         padding: 2.6rem 0 2.1rem;
         margin-bottom: 4rem;
@@ -427,8 +422,6 @@
     .header__title {
         font-size: 2.6rem;
         line-height: 4rem;
-        width: 290px;
-        margin: 0 auto 1rem;
     }
 
     .header__cards {
@@ -1068,16 +1061,8 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
 }
 
 @media only screen and (max-width: 575.8px) {
-    /* .title-section>span.span-line {
+    .title-section>br.no {
         display: block;
-    } */
-
-    .cards-recipe__title ,
-    .basics-program__title,
-    .program-criteria .title-section,
-    .leave-question .title-section {
-        width: 230px;
-        margin: 0 auto .6rem;
     }
     .header .container .col-12{
         padding: 0;
@@ -1258,7 +1243,7 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         display: none;
     }
     .fast-result__img {
-        bottom: -52%;
+        bottom: -14rem;
         right: 0;
     }
     .fast-result {
@@ -1307,6 +1292,10 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     .price__card {
         width: 100%;
         padding: 3.5rem 0 11rem;
+    }
+
+    .price__card_premium {
+        background-size: 600px;
     }
     .price {
         margin-bottom: 0;
@@ -1386,6 +1375,19 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     }
     .basics-program__title {
         text-align: center;
+    }
+    .program-participants__desc>p.color-red{
+        margin: 1.3rem 0;
+        text-align: center;
+    }
+    .price .title-section > br,
+    .fast-result p>br,
+    .basics-program__content p>br{
+        display: none;
+    }
+
+    .basics-program__list li img {
+        min-width: 3.6rem;
     }
 }
 
