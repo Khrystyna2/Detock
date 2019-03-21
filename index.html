@@ -39,12 +39,12 @@
                         </div>
                         <div class="top-menu">
                             <ul class="menu">
-                                <li><a href="#">Программа</a></li>
-                                <li><a href="#">Основатель</a></li>
+                                <li><a class="scroll" href="#program">Программа</a></li>
+                                <li><a class="scroll" href="#founder">Основатель</a></li>
                             </ul>
                             <ul class="menu">
-                                <li><a href="#">Отзывы</a></li>
-                                <li style="border: none;"><a href="#">Подарок</a></li>
+                                <li><a class="scroll" href="#reviews">Отзывы</a></li>
+                                <li style="border: none;"><a class="scroll" href="#giftSection">Подарок</a></li>
                             </ul>
                             <a href="#" class="top-menu__gift text-center">
                                 <img src="icons/gift.svg" alt="gift">
@@ -57,7 +57,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-2 col-xl-4 align-self-end order-2 order-md-0">
-                    <div class="btn-play">
+                    <div class="btn-play open-popup" data-src="https://www.youtube.com/embed/oSOSSrQ5OrI">
                         <img src="icons/btn-play.svg" alt="">
                         <span>Видео-знакомство</span>
                         <div class="arrow d-flex align-items-end"><img src="icons/arrow.svg" alt=""> Давайте
@@ -114,11 +114,13 @@
                 </div>
             </div>
         </div>
+        <a href="#" id="gift"> <img src="image/gift.svg" alt="gift"> </a>
+        <a href="#" id="messenger"> <img src="image/messenger.svg" alt="messenger"> </a>
     </header>
     <!-- header end -->
 
     <main class="main">
-        <section class="good-news">
+        <section id="giftSection" class="good-news">
             <div class="container">
                 <div class="row justify-content-end">
                     <div class="col-12 col-lg-8">
@@ -126,8 +128,9 @@
                             <h3 class="good-news__title title-section">Хорошая новость!</h3>
                             <p>Благодаря этой PDF-инструкции вы начнете менять
                                 свои привычки и взгляды прямо сейчас</p>
-                            <button type="button" class="btn-red good-news__btn"  data-toggle="modal" data-target="#goodNewsModal">Получить инструкцию <span><img
-                                        src="icons/arrow-right.svg" alt=""></span></button>
+                            <button type="button" class="btn-red good-news__btn" data-toggle="modal"
+                                data-target="#goodNewsModal">Получить инструкцию <span><img src="icons/arrow-right.svg"
+                                        alt=""></span></button>
                             <div class="good-news__image">
                                 <img src="image/image-catalog.png" alt="">
                             </div>
@@ -193,7 +196,7 @@
                 </div>
             </div>
         </section>
-        <section class="our-feel">
+        <section id="founder" class="our-feel">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-10">
@@ -207,7 +210,7 @@
                             <p class="fs-34 color-red fo-w900">Тогда нам с вами по пути!</p>
                             <p class="fs-21 fo-w900">Основатель Проекта “ДЕТОКС И МОЛОДОСТЬ”</p>
                             <a href="#" class="link-color-green fs-34 fo-w900">Ира Трилевич</a>
-                            <div class="our-feel__video">
+                            <div class="our-feel__video open-popup" data-src="https://www.youtube.com/embed/oSOSSrQ5OrI">
                                 <img src="image/image-2.png" alt="">
                                 <span class="play-video"><img src="icons/play.svg" alt=""></span>
                             </div>
@@ -222,7 +225,7 @@
             </div>
         </section>
 
-        <section class="basics-program bg-gradient border-green">
+        <section id="program" class="basics-program bg-gradient border-green">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3 align-self-end">
@@ -399,7 +402,7 @@
             </div>
         </section>
 
-        <section class="reviews-customer">
+        <section id="reviews" class="reviews-customer">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -470,8 +473,9 @@
                                 самочувствие?</h3>
                             <p>Благодаря этой PDF-инструкции вы начнете менять<br>
                                 свои привычки и взгляды прямо сейчас</p>
-                                <button type="button" class="btn-red fast-result__btn"  data-toggle="modal" data-target="#fast-resultModal">Скачать инструкцию <span><img
-                                    src="icons/arrow-right.svg" alt=""></span></button>
+                            <button type="button" class="btn-red fast-result__btn" data-toggle="modal"
+                                data-target="#fast-resultModal">Скачать инструкцию <span><img
+                                        src="icons/arrow-right.svg" alt=""></span></button>
                             <div class="fast-result__img">
                                 <img src="image/image-book.png" alt="">
                             </div>
@@ -935,118 +939,129 @@
         <button type="button" data-toggle="modal" data-target="#goodNewsDoneModal">Инструкция</button>
         <button type="button" data-toggle="modal" data-target="#thankModal">Thank</button>
 
-         <!-- Modal -->
-        <div class="modal fade" id="goodNewsModal" tabindex="-1" role="dialog"
-        aria-labelledby="goodNewsModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title title-section" id="goodNewsModalTitle">7 врагов нашей <br> молодости</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
+        <!-- Modal -->
+        <div class="modal fade" id="goodNewsModal" tabindex="-1" role="dialog" aria-labelledby="goodNewsModalTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title title-section" id="goodNewsModalTitle">7 врагов нашей <br> молодости</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
                         <p>Хотите увидеть главных врагов вашей молодости в лицо?
-                                Благодаря этой PDF-инструкции, вы узнаете, какие факторы
-                                определяют скорость старения</p>
-                    <form>
-                        <input type="email" placeholder="E-mail">
-                        <button type="submit" class="btn-red">Получить инструкцию <span><img
-                            src="icons/arrow-right.svg" alt=""></span></button>
-                    </form>
+                            Благодаря этой PDF-инструкции, вы узнаете, какие факторы
+                            определяют скорость старения</p>
+                        <form>
+                            <input type="email" placeholder="E-mail">
+                            <button type="submit" class="btn-red">Получить инструкцию <span><img
+                                        src="icons/arrow-right.svg" alt=""></span></button>
+                        </form>
+                    </div>
+                    <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
                 </div>
-                <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="fast-resultModal" tabindex="-1" role="dialog"
-        aria-labelledby="fast-resultModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title title-section" id="fast-resultModalTitle">Быстрый результат<br>
+        <div class="modal fade" id="fast-resultModal" tabindex="-1" role="dialog"
+            aria-labelledby="fast-resultModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title title-section" id="fast-resultModalTitle">Быстрый результат<br>
                             за 5 дней</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
-                    </button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Благодаря этой PDF-инструкции, вы измените свои представления о здоровом образе жизни и
+                            внедрите новые полезные привычки</p>
+                        <form>
+                            <input type="email" placeholder="E-mail">
+                            <button type="submit" class="btn-red">Получить инструкцию <span><img
+                                        src="icons/arrow-right.svg" alt=""></span></button>
+                        </form>
+                    </div>
+                    <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
                 </div>
-                <div class="modal-body text-center">
-                        <p>Благодаря этой PDF-инструкции, вы измените свои представления о здоровом образе жизни и внедрите новые полезные привычки</p>
-                    <form>
-                        <input type="email" placeholder="E-mail">
-                        <button type="submit" class="btn-red">Получить инструкцию <span><img
-                            src="icons/arrow-right.svg" alt=""></span></button>
-                    </form>
-                </div>
-                <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="goodNewsDoneModal" tabindex="-1" role="dialog"
-        aria-labelledby="goodNewsDoneModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title title-section" id="goodNewsDoneModalTitle">Готово!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
+        <div class="modal fade" id="goodNewsDoneModal" tabindex="-1" role="dialog"
+            aria-labelledby="goodNewsDoneModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title title-section" id="goodNewsDoneModalTitle">Готово!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
                         <p class="mb-100">Инструкция "Быстрый результат за 5 дней" отправлена<br>
-                                на <span class="color-red">[указанный e-mail]</span></p>
-                    <img src="image/image-modal.png" alt="" class="modal-image">
+                            на <span class="color-red">[указанный e-mail]</span></p>
+                        <img src="image/image-modal.png" alt="" class="modal-image">
+                    </div>
+                    <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
                 </div>
-                <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="fast-resultDoneModal" tabindex="-1" role="dialog"
-        aria-labelledby="fast-resultDoneModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title title-section" id="fast-resultDoneModalTitle">Готово!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
+        <div class="modal fade" id="fast-resultDoneModal" tabindex="-1" role="dialog"
+            aria-labelledby="fast-resultDoneModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title title-section" id="fast-resultDoneModalTitle">Готово!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
                         <p class="mb-100">Инструкция "7 врагов нашей молодости" отправлена<br>
-                                на <span class="color-red">[указанный e-mail]</span></p>
-                    <img src="image/image-modal.png" alt="" class="modal-image">
+                            на <span class="color-red">[указанный e-mail]</span></p>
+                        <img src="image/image-modal.png" alt="" class="modal-image">
+                    </div>
+                    <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
                 </div>
-                <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="thankModal" tabindex="-1" role="dialog"
-        aria-labelledby="thankModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title title-section" id="thankModalTitle">Спасибо!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Вы успешно прошли регистрацию на Программу
+        <div class="modal fade" id="thankModal" tabindex="-1" role="dialog" aria-labelledby="thankModalTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title title-section" id="thankModalTitle">Спасибо!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"> <img src="icons/close.svg" alt="close"> </span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p>Вы успешно прошли регистрацию на Программу
                             Детокс - Стройность - Молодость.</p>
-                    <p>Чтобы присоединиться к Программе, зайдите на почту
+                        <p>Чтобы присоединиться к Программе, зайдите на почту
                             и прочитайте письмо с подробной инструкцией.</p>
                         <p class="mb-100">До скорой встречи!</p>
-                    <img src="image/image-modal.png" alt="" class="modal-image">
+                        <img src="image/image-modal.png" alt="" class="modal-image">
+                    </div>
+                    <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
                 </div>
-                <span class="modal-logo"><img src="image/logo.svg" alt="logo"></span>
             </div>
         </div>
-    </div>
+
+        <!-- modal window for video -->
+        <div id="overlay"></div>
+        <div class="popup-video-open">
+            <div class="modal-body">
+                <div class="video-open">
+                    <iframe id="video" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- footer start -->
@@ -1074,7 +1089,7 @@
         </div>
     </footer>
 
-    
+
     <!-- footer end -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
