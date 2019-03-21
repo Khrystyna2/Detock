@@ -67,4 +67,6 @@ $(document).ready(function () {
         }, 1000);
     });
 
+    new WOW().init();
+
 });
