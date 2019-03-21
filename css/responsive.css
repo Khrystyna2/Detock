@@ -515,6 +515,8 @@
     }
 
     .slider__items {
+        -webkit-box-align: center;
+    -ms-flex-align: center;
         align-items: center;
     }
 
@@ -639,9 +641,12 @@
 
     .btn-play {
         display: block;
-        background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
+        background: -webkit-linear-gradient(260.82deg, #B5E59B 13.23%, #8BCA6C 84.64%);
+background: -o-linear-gradient(260.82deg, #B5E59B 13.23%, #8BCA6C 84.64%);
+background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         border: 1px solid #8CC63F;
         box-sizing: border-box;
+        -webkit-box-shadow: 0px 2px 9px #94C27C;
         box-shadow: 0px 2px 9px #94C27C;
         border-radius: 40px;
         width: 80%;
@@ -692,8 +697,14 @@
     }
 
     .btn-menu>span {
-        display: inline-flex;
+        display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+        -webkit-box-align: center;
+    -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+    -ms-flex-pack: center;
         justify-content: center;
         width: 44px;
         height: 44px;
@@ -746,6 +757,9 @@
 
     .top-menu__gift {
         display: block;
+        background: -webkit-gradient(linear, left top, right top, from(#FF5F37), to(#FF7856));
+        background: -webkit-linear-gradient(left, #FF5F37 0%, #FF7856 100%);
+        background: -o-linear-gradient(left, #FF5F37 0%, #FF7856 100%);
         background: linear-gradient(90deg, #FF5F37 0%, #FF7856 100%);
         padding: 1.2rem;
         width: calc(100% + 4rem);
@@ -814,6 +828,7 @@
 
     .cards-recipe__item:nth-child(-n+5) {
         background: #fff;
+        -webkit-box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
         box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
     }
 
@@ -861,6 +876,7 @@
 
     .it-not-eating__item:nth-child(-n+4){
         background: #fff;
+        -webkit-box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
         box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
     }
 
@@ -898,6 +914,8 @@
     }
 
     .program-not__list li {
+        -webkit-box-align: center;
+    -ms-flex-align: center;
         align-items: center;
         margin-bottom: 1.6rem;
     }
@@ -964,9 +982,12 @@
     }
 
     .price__content {
+        -webkit-box-pack: center;
+    -ms-flex-pack: center;
         justify-content: center;
         margin-top: 1.6rem;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     }
 
     .price__card {
@@ -1010,6 +1031,8 @@
     }
 
     .social-link {
+        -webkit-box-pack: center;
+    -ms-flex-pack: center;
         justify-content: center;
         margin-bottom: 1.4rem;
     }
@@ -1160,6 +1183,8 @@
     }
 
     .box-response__text {
+        -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
         order: 1;
         padding: 1rem;
     }
@@ -1187,6 +1212,8 @@
     }
     .reviews-customer__img {
         width: 70%;
+        -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
         order: -1;
     }
     .reviews-customer__text .title-section {
