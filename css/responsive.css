@@ -1147,7 +1147,8 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         background-size: 50%;
     }
     .good-news__image {
-        bottom: -42%;
+        bottom: -52%;
+        left: 4rem;
         width: 90%;
         max-width: 320px;
     }
@@ -1395,6 +1396,11 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     }
     .btn-red>span {
         margin-left: 0.8rem;
+    }
+    .good-news__image {
+        width: 270px;
+        bottom: -42%;
+        left: 2rem;
     }
 }
 
