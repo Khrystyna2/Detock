@@ -69,4 +69,16 @@ $(document).ready(function () {
 
     new WOW().init();
 
+    //fixed menu
+    let heightHeader = $('.header-fixed').height();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= heightHeader) {
+            $('.header-fixed').addClass('fixed');
+            $('.header').css('padding-top', heightHeader);
+        } else {
+            $('.header-fixed').removeClass('fixed');
+            $('.header').css('padding-top', "0");
+        }
+    });
+
 });
