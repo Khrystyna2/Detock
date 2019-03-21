@@ -210,7 +210,7 @@ h6 {
 
 .title-light-red {
     width: 100%;
-    background-color: #FF9481;
+    background-color: #FF5F37;
     font-weight: 700;
     position: relative;
     color: #fff;
@@ -353,10 +353,27 @@ h6 {
 .title-section {
     font-size: 2.9rem;
     line-height: 3.4rem;
+    position: relative;
 }
 
-.title-section>span {
-    color: #fff;
+.title-section>span.span-line,
+.header__title>span.span-line {
+    padding: 0 .4rem;
+}
+
+.title-section>span.span-line::before,
+.title-section>span.span-line::after,
+.header__title>span.span-line::before,
+.header__title>span.span-line::after {
+    content: '-';
+}
+.title-section>span.span-line::after,
+.header__title>span.span-line::after {
+    padding-left: 0.8rem;
+}
+.title-section>span.span-line::before,
+.header__title>span.span-line::before {
+    padding-right: 0.6rem;
 }
 
 html {
@@ -1180,7 +1197,7 @@ background: linear-gradient(144.25deg, rgba(234, 255, 228, 0.75) 0%, #FFEDF1 100
     position: relative;
     width: 100%;
     display: block;
-    background-color: #FF9481;
+    background-color: #FF5F37;
     font-size: 0.9rem;
     font-weight: 700;
     text-align: center;
@@ -1305,7 +1322,7 @@ background: linear-gradient(144.25deg, rgba(234, 255, 228, 0.75) 0%, #FFEDF1 100
 }
 
 .program-not__title .not {
-    left: 54%;
+    left: 45%;
 }
 
 .program-not {

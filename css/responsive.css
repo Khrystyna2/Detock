@@ -59,6 +59,9 @@
     html{
         font-size: 17px;
     }
+    .header__title {
+        font-size: 3rem;
+    }
 
     .btn-red {
         height: 3.74rem;
@@ -423,7 +426,11 @@
 
     .header__title {
         margin-bottom: 1rem;
-        font-size: 3.2rem;
+        font-size: 2.6rem;
+    }
+
+    .header__title>span.span-line {
+        display: block;
     }
 
     .header__cards {
@@ -503,7 +510,7 @@
     }
 
     .program-not__title .not {
-        left: 55%;
+        left: 44%;
     }
 
     .reviews-customer__img>div {
@@ -679,7 +686,14 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     .btn-play>span {
         display: block;
     }
+    .header-fixed.fixed {
+        background: #8CC63F;
+        padding-bottom: 0.5rem;
+      }
 
+      .header-fixed.fixed .logo {
+        width: 4rem;
+    }
     .nav-menu {
         position: relative;
         padding-bottom: 1.7rem;
@@ -716,25 +730,28 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         -o-border-radius: 50%;
         margin-right: 4px;
     }
-    .nav-menu.open .btn-menu {
+    .nav-menu.open .btn-menu,
+    .header-fixed.fixed .btn-menu {
         color: #fff;
     }
 
-    .nav-menu.open  .btn-menu>span {
+    .nav-menu.open  .btn-menu>span,
+    .header-fixed.fixed .btn-menu>span {
         background-color: #fff;
     }
 
-    .nav-menu.open  .btn-menu>span svg {
+    .nav-menu.open  .btn-menu>span svg,
+    .header-fixed.fixed .btn-menu>span svg {
         fill: #8CC63F;
     }
 
     .top-menu {
         display: none;
         border-radius: 0;
-        -webkit-border-radius: 0    ;
-        -moz-border-radius: 0    ;
-        -ms-border-radius: 0    ;
-        -o-border-radius: 0    ;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
         padding: 5rem 2rem 0 2rem;
         position: absolute;
         top: 0;
@@ -774,16 +791,13 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     }
 
     .logo {
-        width: 2.9rem;
-        height: 3.5rem;
+        width: 4rem;
         position: relative;
         margin: -5rem auto 0;
         z-index: 12;
     }
-    .logo>img {
-        display: none;
-    }
-    .logo::after {
+
+    /* .logo::after {
         content: '';
         position: absolute;
         top: 0;
@@ -792,7 +806,7 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         bottom: 0;
         background: url(../image/logo-mob.svg) no-repeat center center;
         background-size: contain;
-    }
+    } */
 
     .header__cards {
         padding: 0 13px 4rem 13px;
@@ -896,7 +910,7 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     }
 
     .program-not__title .not {
-        left: 54%;
+        left: 44%;
     }
 
     .program-not {
@@ -1056,6 +1070,9 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
 }
 
 @media only screen and (max-width: 575.8px) {
+    .title-section>span.span-line {
+        display: block;
+    }
     .header .container .col-12{
         padding: 0;
     }
@@ -1072,7 +1089,7 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         padding: 0;
     }
     .header {
-        background: url(../image/banner-first-screen-768.png) no-repeat top right;
+        background: url(../image/banner-first-screen-768.png) no-repeat top right -80px;
         background-size: 1050px;
         padding-bottom: 0;
     }
@@ -1098,6 +1115,11 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
     }
     .header__cards_title {
         text-transform: uppercase;
+    }
+
+    .header__text {
+        max-width: 290px;
+        margin: 0 auto;
     }
 
     .good-news .col-12 {
@@ -1197,7 +1219,7 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         margin: 0 auto 2rem;
     }
     .program-not__title .not {
-        left: 30%;
+        left: 38%;
         bottom: 0;
         top: auto;
     }
@@ -1289,6 +1311,10 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         background: url(../image/banner-768.png) no-repeat center right 20% / cover;
     }
 
+    .leave-question .title-section {
+        text-align: center;
+    }
+
     .modal-dialog {
         max-width: 100%;
     }
@@ -1354,12 +1380,21 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         top: 0.8rem;
         width: 3.5rem;
     }
+    .basics-program__title {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 450px) {
     
     .popup-video-open .modal-body .video-open {
         height: 12rem;
+    }
+    .btn-red {
+        padding: .4rem .6rem .4rem 1rem;
+    }
+    .btn-red>span {
+        margin-left: 0.8rem;
     }
 }
 
