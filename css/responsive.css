@@ -425,13 +425,10 @@
     }
 
     .header__title {
-        margin-bottom: 1rem;
         font-size: 2.6rem;
         line-height: 4rem;
-    }
-
-    .header__title>span.span-line {
-        display: block;
+        width: 290px;
+        margin: 0 auto 1rem;
     }
 
     .header__cards {
@@ -1071,8 +1068,16 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
 }
 
 @media only screen and (max-width: 575.8px) {
-    .title-section>span.span-line {
+    /* .title-section>span.span-line {
         display: block;
+    } */
+
+    .cards-recipe__title ,
+    .basics-program__title,
+    .program-criteria .title-section,
+    .leave-question .title-section {
+        width: 230px;
+        margin: 0 auto .6rem;
     }
     .header .container .col-12{
         padding: 0;
@@ -1157,9 +1162,6 @@ background: linear-gradient(189.18deg, #B5E59B 13.23%, #8BCA6C 84.64%);
         width: 100%;
         min-height: 8rem;
         margin: 10px 20px;
-    }
-    .cards-recipe__title {
-        margin: 0;
     }
 
     .our-feel__content {
