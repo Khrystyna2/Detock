@@ -922,13 +922,14 @@
         padding: 0;
     }
     .header {
-        background: url(../image/banner-first-screen-768.png) no-repeat top right -80px;
+        background: url(../image/banner-first-screen-768.png) no-repeat top right -50px;
         background-size: 1050px;
         padding-bottom: 0;
     }
     .btn-play {
         padding: 1.2rem 1rem 1.2rem 1.8rem;
         text-align: left;
+        margin: 1.2rem auto;
     }
     .header__cards-content {
         padding: 3rem 2rem 4rem;
@@ -1227,6 +1228,12 @@
     }
     .header__cards_title {
         padding: 1.4rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header {
+        background-position: top center;
     }
 }
 
