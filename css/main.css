@@ -906,8 +906,14 @@ body {
     right: 0;
     bottom: 0;
     padding: 2.5rem 1.57rem 2.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #006837;
     opacity: 0;

@@ -1115,6 +1115,7 @@
     }
     .price__card_premium {
         background-size: 600px;
+        background-position: top -34px center;
     }
     .price {
         margin-bottom: 0;
