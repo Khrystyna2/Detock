@@ -2099,6 +2099,11 @@ body {
     margin-right: 1.6rem;
 }
 
+.social-link__item img {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
 .social-link__item:last-child {
     margin-right: 0;
 }
