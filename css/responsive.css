@@ -292,6 +292,10 @@
     .program-receive__content {
         margin-left: 1rem;
     }
+
+    .program-receive__content .title-section>br {
+        display: none;
+    }
     .program-receive__content_right {
         margin-right: 1rem;
     }
