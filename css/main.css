@@ -863,6 +863,7 @@ body {
     -webkit-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
+    position: relative;
 }
 
 .cards-recipe__item:first-child {
@@ -884,6 +885,9 @@ body {
 .cards-recipe__item:nth-child(5) {
     background: url(../image/card-5.png) no-repeat center center / 100% 100%;
 }
+.cards-recipe__item:nth-child(6) {
+    background: url(../image/card-6.png) no-repeat center center / 100% 100%;
+}
 
 .cards-recipe__item>p {
     width: 90%;
@@ -895,8 +899,49 @@ body {
     margin: 0 auto 1.8rem;
 }
 
-.cards-recipe__item_last {
-    background: url(../image/card-6.png) no-repeat center center / 100% 100%;
+.cards-recipe__item_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2.5rem 1.57rem 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #006837;
+    opacity: 0;
+    transition: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+}
+
+.cards-recipe__item:first-child .cards-recipe__item_back {
+    background: url(../image/card-1-back.png) no-repeat center center / 100% 100%;
+}
+
+.cards-recipe__item:nth-child(2) .cards-recipe__item_back {
+    background: url(../image/card-2-back.png) no-repeat center center / 100% 100%;
+}
+
+.cards-recipe__item:nth-child(3) .cards-recipe__item_back {
+    background: url(../image/card-3-back.png) no-repeat center center / 100% 100%;
+}
+
+.cards-recipe__item:nth-child(4) .cards-recipe__item_back {
+    background: url(../image/card-4-back.png) no-repeat center center / 100% 100%;
+}
+
+.cards-recipe__item:nth-child(5) .cards-recipe__item_back {
+    background: url(../image/card-5-back.png) no-repeat center center / 100% 100%;
+}
+.cards-recipe__item:nth-child(6) .cards-recipe__item_back {
+    background: url(../image/card-6-back.png) no-repeat center center / 100% 100%;
+}
+.cards-recipe__item:hover .cards-recipe__item_back {
+    opacity: 1;
 }
 
 .circle {
