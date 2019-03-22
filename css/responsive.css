@@ -1100,9 +1100,7 @@
     .program-participants__desc>p {
         width: 100%;
     }
-    .program-participants__desc .title-section {
-        text-align: center;
-    }
+
     .program-participants__text>div {
         width: 100%;
     }
@@ -1134,6 +1132,12 @@
     }
     .leave-question .title-section {
         text-align: center;
+    }
+    .leave-question p>br {
+        display: none;
+    }
+    .leave-question p.color-red>br {
+        display: block;
     }
     .modal-dialog {
         max-width: 100%;
@@ -1196,7 +1200,6 @@
     }
     .program-participants__desc>p.color-red {
         margin: 1.3rem 0;
-        text-align: center;
     }
     .price .title-section>br,
     .fast-result p>br,
@@ -1205,6 +1208,9 @@
     }
     .basics-program__list li img {
         min-width: 3.6rem;
+    }
+    .price__conditions li::after {
+        display: none;
     }
 }
 
@@ -1234,6 +1240,9 @@
 @media only screen and (max-width: 425px) {
     .header {
         background-position: top center;
+    }
+    .for-14day-program {
+        background-position: center center;
     }
 }
 

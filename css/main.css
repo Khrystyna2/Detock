@@ -1802,11 +1802,11 @@ body {
 
 .price__price {
     padding: 1rem 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.8rem;
     color: #006837;
     text-align: left;
-    font-weight: 700;
+    font-family: 'Pacifico', sans-serif;
 }
 
 .price__price ul li>span {
