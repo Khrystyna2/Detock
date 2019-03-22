@@ -2013,6 +2013,15 @@ body {
     padding: 10.5rem 0 4.4rem;
 }
 
+.leave-question .title-section {
+    width: 60%;
+    text-align: center;
+}
+
+.leave-question .title-section>br.no {
+    display: block;
+}
+
 .leave-question p.color-red {
     margin-top: 2.9rem;
 }
