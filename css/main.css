@@ -572,21 +572,26 @@ body {
 }
 
 .header__cards {
-    background: url(../image/card.png) no-repeat bottom center / 100% 100%;
-    padding: 0 11px 4.7rem 11px;
-    /* padding-bottom: 4.7rem; */
-}
-
-.header__cards>p {
-    font-weight: 900;
-    font-style: italic;
-    padding: 0 3.2rem;
-    margin-bottom: 0.6rem;
+    width: 100%;
+    min-height: 837px;
 }
 
 .header__cards_title {
     padding: 1.4rem 3rem;
-    margin-bottom: 2.8rem;
+}
+
+.header__cards-content {
+    background: url(../image/card.png) no-repeat bottom center / 100% 100%;
+    padding: 2.8rem 11px 4.7rem 11px;
+    width: calc(100% + 22px);
+    margin-left: -11px;
+    margin-top: -12px;
+}
+.header__cards-content p {
+    font-weight: 900;
+    font-style: italic;
+    padding: 0 3.2rem;
+    margin-bottom: 0.6rem;
 }
 
 .header__list li {

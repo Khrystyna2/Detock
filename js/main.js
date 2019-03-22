@@ -79,6 +79,6 @@ $(document).ready(function () {
             $('.header-fixed').removeClass('fixed');
             $('.header').css('padding-top', "0");
         }
-    });
+    });    
 
 });
