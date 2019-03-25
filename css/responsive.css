@@ -151,10 +151,10 @@
         width: 7.1rem;
         height: 6rem;
     }
-    .cards-recipe__item>p {
+    .cards-recipe__item_front>p {
         width: 100%;
     }
-    .cards-recipe__item,
+    .cards-recipe__item_front,
     .cards-recipe__item_back  {
         padding: 2rem 1rem;
     }
@@ -400,7 +400,7 @@
         -o-transform: rotate(250deg);
     }
     .cards-recipe__item {
-        min-height: 17rem;
+        height: 17rem;
     }
     .cards-recipe__img {
         width: 4.58rem;
@@ -712,12 +712,12 @@
     }
     .cards-recipe__item {
         width: 48%;
-        min-height: 15rem;
+        height: 15rem;
     }
     .cards-recipe__item .circle {
         display: none;
     }
-    .cards-recipe__item:nth-child(-n+6) {
+    .cards-recipe__item:nth-child(-n+6) .cards-recipe__item_front {
         background: #fff;
         -webkit-box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
         box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
@@ -726,6 +726,8 @@
         background: -webkit-linear-gradient(332.03deg, #FFF6F8 0%, #EFFFEB 100%);
         background: -o-linear-gradient(332.03deg, #FFF6F8 0%, #EFFFEB 100%);
         background: linear-gradient(117.97deg, #FFF6F8 0%, #EFFFEB 100%);
+        -webkit-box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
+        box-shadow: 0px 6px 12px rgba(82, 82, 82, 0.1);
     }
     .cards-recipe__item_back.fs-19 {
         font-size: 0.9rem;
@@ -985,7 +987,6 @@
     }
     .cards-recipe__item {
         width: 100%;
-        min-height: 8rem;
         margin: 10px 20px;
     }
     .our-feel__content {
