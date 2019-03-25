@@ -79,6 +79,10 @@ $(document).ready(function () {
             $('.header-fixed').removeClass('fixed');
             $('.header').css('padding-top', "0");
         }
-    });    
+    });
+    
+    if ('ontouchstart' in document) {
+        Y.one('body').removeClass('no-touch');
+    }
 
 });
