@@ -1328,6 +1328,23 @@ body {
     -o-transform: rotateY(360deg);
 }
 
+@media (hover) {
+    .how-it-work__item:hover .how-it-work__item_front {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+    .how-it-work__item:hover .how-it-work__item_back {
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+    }
+  }
+
 .how-it-work__item>span {
     position: absolute;
     top: -10px;
