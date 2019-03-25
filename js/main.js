@@ -81,15 +81,15 @@ $(document).ready(function () {
         }
     });
     
-    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
-        $('.how-it-work__item').click(function () {
-            $(this).toggleClass('hover');
-            $(this).closest('.how-it-work__item').siblings('.how-it-work__item').removeClass('hover');
-        });
-        $('.cards-recipe__item').click(function () {
-            $(this).toggleClass('hover');
-            $(this).closest('.cards-recipe__item').siblings('.cards-recipe__item').removeClass('hover');
-        });
-    }
+    // if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+    //     $('.how-it-work__item').click(function () {
+    //         $(this).toggleClass('hover');
+    //         $(this).closest('.how-it-work__item').siblings('.how-it-work__item').removeClass('hover');
+    //     });
+    //     $('.cards-recipe__item').click(function () {
+    //         $(this).toggleClass('hover');
+    //         $(this).closest('.cards-recipe__item').siblings('.cards-recipe__item').removeClass('hover');
+    //     });
+    // }
 
 });
