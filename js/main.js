@@ -81,8 +81,10 @@ $(document).ready(function () {
         }
     });
     
-    if ('ontouchstart' in document) {
-        Y.one('body').removeClass('no-touch');
+    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+        $('.how-it-work__item, .cards-recipe__item').click(function () {
+            $(this).toggleClass('hover');
+        });
     }
 
 });
