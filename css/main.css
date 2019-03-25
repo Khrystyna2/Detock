@@ -1809,9 +1809,9 @@ body {
     font-family: 'Pacifico', sans-serif;
 }
 
-.price__price ul li>span {
+.price__price ul li .price__discount {
     color: #828282;
-    display: inline-block;
+    display: none;
     width: 5.8rem;
     font-weight: 500;
 }
@@ -1941,6 +1941,10 @@ body {
     margin-bottom: 5.78rem;
 }
 
+.questions-answers .title-section {
+    text-align: center;
+}
+
 .accordion {
     margin: 1rem 0 2.6rem;
 }
@@ -2011,11 +2015,6 @@ body {
 .leave-question {
     background: url(../image/banner-last-screen.png) no-repeat bottom center / cover;
     padding: 10.5rem 0 4.4rem;
-}
-
-.leave-question .title-section {
-    width: 60%;
-    text-align: center;
 }
 
 .leave-question .title-section>br.no {

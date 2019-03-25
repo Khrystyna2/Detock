@@ -525,12 +525,6 @@
     .modal-body .modal-image {
         bottom: -2.7rem;
     }
-
-
-    .leave-question .title-section {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -1136,9 +1130,7 @@
     .for-14day-program {
         background: url(../image/banner-768.png) no-repeat center right 20% / cover;
     }
-    .leave-question .title-section {
-        text-align: center;
-    }
+
     .leave-question p>br {
         display: none;
     }
@@ -1246,6 +1238,9 @@
     }
     .for-14day-program {
         background-position: center center;
+    }
+    .questions-answers .title-section {
+        text-align: left;
     }
 }
 
