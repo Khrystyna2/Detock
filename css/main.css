@@ -1319,7 +1319,8 @@ body {
     -o-transform: rotateY(180deg);
 }
 
-.how-it-work__item:hover .how-it-work__item_back {
+.how-it-work__item:hover .how-it-work__item_back,
+.how-it-work__item:focus .how-it-work__item_back {
     transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
     -moz-transform: rotateY(360deg);
@@ -1811,7 +1812,7 @@ body {
 
 .price__price ul li .price__discount {
     color: #828282;
-    display: none;
+    display: inline-block;
     width: 5.8rem;
     font-weight: 500;
 }
