@@ -67,6 +67,10 @@
         width: 9.1rem;
         height: 8rem;
     }
+    .our-feel {
+        background-size: 74rem;
+        padding: 8rem 0 8.4rem;
+    }
     .our-feel__content .leaf__1 {
         width: 14.7rem;
     }
@@ -424,6 +428,7 @@
     }
     .how-it-work__item {
         width: 48%;
+        min-height: 11rem;
         padding: 3.7rem 2rem 2.1rem;
     }
     .program-not__title .not {
@@ -680,16 +685,7 @@
         margin: -5rem auto 0;
         z-index: 12;
     }
-    /* .logo::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url(../image/logo-mob.svg) no-repeat center center;
-        background-size: contain;
-    } */
+
     .header__list li {
         padding: 0.8rem 2.4rem;
     }
@@ -748,6 +744,12 @@
         right: 0;
         bottom: -6%;
         width: 9rem;
+    }
+    .our-feel__content p>br {
+        display: none;
+    }
+    .how-it-work__item {
+        min-height: 13rem;
     }
     .basics-program__img {
         display: none;
@@ -1034,6 +1036,10 @@
     }
     .how-it-work__item {
         width: 100%;
+        min-height: 11rem;
+    }
+    .it-not-eating__title>p::after, .it-not-eating__title>p::before {
+        top: 6px;
     }
     .program-not__title {
         position: relative;
