@@ -193,7 +193,7 @@
         padding: 0px 2rem;
     }
     .box-response__text {
-        min-height: 12rem;
+        height: 12rem;
         padding: 0 1rem 0 2rem;
     }
     .box-response__img {
@@ -201,7 +201,7 @@
     }
     .box-response__img>img {
         width: 16.4rem;
-        height: 14rem;
+        height: 16rem;
     }
     .how-it-work {
         margin-top: 3rem;
@@ -775,7 +775,7 @@
         margin-bottom: 20px;
     }
     .box-response__text {
-        min-height: 10rem;
+        height: 10rem;
     }
     .program-not__title .not {
         left: 44%;
@@ -829,13 +829,14 @@
         width: 12rem;
     }
     .box-response__img>img {
-        width: 13.4rem;
-        height: 11rem;
+        width: 15.4rem;
+        height: 15rem;
     }
     .box-response__img {
         min-width: 13rem;
     }
     .box-response__text {
+        height: auto;
         padding: 1rem 1rem 1rem 2rem;
     }
     .program-participants__img {

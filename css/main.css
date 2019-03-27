@@ -1073,6 +1073,22 @@ body {
 .our-feel__content>p {
     margin-bottom: 1rem;
 }
+.our-feel__content ul li {
+    padding-left: 1.6rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.our-feel__content ul li::before {
+    content: '';
+    background: url(../icons/done-tick.svg) no-repeat center center / 100% 100%;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
 
 .our-feel__title {
     margin-bottom: 1rem;
@@ -1269,7 +1285,7 @@ body {
 }
 
 .box-response__text {
-    min-height: 12.9rem;
+    height: 12.9rem;
     padding: 0 2.1rem 0 5.78rem;
     background: -webkit-linear-gradient(305.75deg, rgba(234, 255, 228, 0.75) 0%, #FFEDF1 100%);
     background: -o-linear-gradient(305.75deg, rgba(234, 255, 228, 0.75) 0%, #FFEDF1 100%);
@@ -1292,8 +1308,8 @@ body {
 }
 
 .box-response__img>img {
-    width: 100%;
-    height: 14.9rem;
+    width: 19.4rem;
+    height: 20rem;
     -o-object-fit: cover;
     object-fit: cover;
 }
