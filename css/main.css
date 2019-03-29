@@ -299,12 +299,10 @@ h6 {
     text-decoration: underline;
 }
 
-.link-color-green:hover {
-    color: #006837;
-    text-decoration: underline;
-}
-
 .color-green {
+    color: #006837;
+}
+.color-green:hover {
     color: #006837;
 }
 
