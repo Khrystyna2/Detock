@@ -530,6 +530,15 @@
     .modal-body .modal-image {
         bottom: -2.7rem;
     }
+
+    .footer__text {
+        font-size: 1.1rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .footer .color-green {
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -907,6 +916,16 @@
     }
     .popup-video-open .modal-body .video-open {
         height: 20rem;
+    }
+    .footer__icon,
+    .footer__tel,
+    .footer .color-green {
+        text-align: center;
+        display: block;
+    }
+    .payment-method  {
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 }
 

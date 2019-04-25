@@ -2173,13 +2173,17 @@ body {
 /* section footer */
 
 .footer {
-    padding: 1.6rem 0;
+    padding: 1.6rem 0 2.9rem;
     background-color: #fff;
 }
 
 .footer__logo {
     display: block;
     width: 5.78rem;
+}
+
+.social-link {
+    margin-bottom: 2.4rem;
 }
 
 .social-link__item {
@@ -2198,6 +2202,41 @@ body {
 .footer__text {
     font-family: 'Pacifico', sans-serif;
     color: #828282;
+    line-height: 2.2rem;
+    margin-bottom: 2.6rem;
+}
+
+.footer__tel {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #828282;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.footer .color-green {
+font-weight: 500;
+font-size: 0.9rem;
+line-height: 1.2rem;
+text-decoration-line: underline;
+}
+
+.footer__icon > p{
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: #000000;
+    margin-bottom: 1.05rem;
+}
+
+.payment-method li{
+    margin-right: 1.6rem;
+}
+.payment-method li:last-child{
+    margin-right: 0;
 }
 
 /* style modal window */
