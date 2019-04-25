@@ -115,6 +115,20 @@
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .image-left {
+        top: -1rem;
+        left: -7rem;
+        width: 16rem;
+    }
+
+    .image-right {
+        bottom: -5rem;
+        right: -7.5rem;
+        width: 9rem;
+    }
+}
+
 @media only screen and (max-width: 1199.8px) {
     .header {
         height: auto;
@@ -337,13 +351,33 @@
         right: 5vmin;
         width: 5rem;
     }
+
+    .thank-you__content {
+        padding: 2.1rem 4.7rem 3.2rem;
+    }
+
+    .thank-you__content .color-red {
+        padding: 1rem 0 2rem;
+    }
+
+    .image-left {
+        top: -2rem;
+        left: -6rem;
+        width: 15rem;
+    }
+
+    .image-right {
+        bottom: -5rem;
+        right: -6.2rem;
+        width: 8.5rem;
+    }
 }
 
 @media only screen and (max-width: 991.8px) {
     html {
         font-size: 15px;
     }
-    .header {
+    .index .header {
         background: url(../image/banner-first-screen-768.png) no-repeat center right / cover;
     }
     .menu li {
@@ -538,6 +572,16 @@
 
     .footer .color-green {
         font-size: 0.8rem;
+    }
+    
+    .image-right {
+        display: none;
+    }
+
+    .image-left {
+        top: -1.5rem;
+        left: -4.2rem;
+        width: 15rem;
     }
 }
 
@@ -945,7 +989,7 @@
     .header .container .col-12.col-md-5.col-xl-4.order-2.order-md-2 {
         padding: 0;
     }
-    .header {
+    .index .header {
         background: url(../image/banner-first-screen-768.png) no-repeat top right -50px;
         background-size: 1050px;
         padding-bottom: 0;
@@ -1238,6 +1282,28 @@
     .price__conditions li::before {
         display: none;
     }
+
+    .thank-you {
+        padding: 1.5rem 0 2rem;
+    }
+
+    .thank-you__content {
+        padding: 1.8rem 2.7rem 2.6rem;
+        position: relative;
+    }
+
+    .image-left {
+        top: 0;
+        bottom: -2.2rem;
+        width: 55%;
+        background: url(../image/image-13.png) no-repeat top right/cover;
+        transform: rotate(10deg);
+        z-index: -1;
+    }
+
+    .image-left>img{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1264,7 +1330,7 @@
 }
 
 @media only screen and (max-width: 425px) {
-    .header {
+    .index .header {
         background-position: top center;
     }
     .for-14day-program {
