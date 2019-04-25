@@ -38,7 +38,7 @@
 }
 
 @media only screen and (max-height: 900px) {
-    .header {
+    .index .header {
         height: auto;
     }
 }
@@ -130,7 +130,7 @@
 }
 
 @media only screen and (max-width: 1199.8px) {
-    .header {
+    .index .header {
         height: auto;
     }
     .top-menu {
@@ -378,7 +378,7 @@
         font-size: 15px;
     }
     .index .header {
-        background: url(../image/banner-first-screen-768.png) no-repeat center right / cover;
+        background: url(../image/banner-first-screen-768.png) no-repeat center left -170px / cover;
     }
     .menu li {
         margin-right: 2.6rem;
@@ -565,12 +565,6 @@
         bottom: -2.7rem;
     }
 
-    .cards-recipe__text {
-        width: 70%;
-        text-align: center;
-        margin: 0 auto 2rem;
-    }
-
     .footer__text {
         font-size: 1.1rem;
         margin-bottom: 2.2rem;
@@ -588,6 +582,12 @@
         top: -1.5rem;
         left: -4.2rem;
         width: 15rem;
+    }
+    
+    .cards-recipe__text {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto 2rem;
     }
 }
 
@@ -736,7 +736,7 @@
     .top-menu__gift>img {
         margin-right: 1rem;
     }
-    .header .col-12 {
+    .index .header .col-12 {
         position: relative;
     }
     .logo {
@@ -968,7 +968,6 @@
     .popup-video-open .modal-body .video-open {
         height: 20rem;
     }
-<<<<<<< HEAD
     .footer__icon,
     .footer__tel,
     .footer .color-green {
@@ -978,14 +977,14 @@
     .payment-method  {
         justify-content: center;
         margin-bottom: 2rem;
-=======
-    .header {
+    }
+    
+    .index .header {
         background: url(../image/banner-first-screen-568.png) no-repeat top center/ cover;
     }
     .header__title {
         margin-top: 2rem;
         margin-bottom: 1rem;
->>>>>>> c410fb6636ccbb0784dd0f7064f1039d0f5adf0f
     }
 }
 
@@ -1005,15 +1004,9 @@
     .header .container .col-12.col-md-5.col-xl-4.order-2.order-md-2 {
         padding: 0;
     }
-<<<<<<< HEAD
     .index .header {
-        background: url(../image/banner-first-screen-768.png) no-repeat top right -50px;
-        background-size: 1050px;
-=======
-    .header {
         background-size: 100%;
         background-position: top -90px left;
->>>>>>> c410fb6636ccbb0784dd0f7064f1039d0f5adf0f
         padding-bottom: 0;
     }
     .btn-play {
@@ -1310,7 +1303,6 @@
     .price__conditions li::before {
         display: none;
     }
-<<<<<<< HEAD
 
     .thank-you {
         padding: 1.5rem 0 2rem;
@@ -1332,10 +1324,9 @@
 
     .image-left>img{
         display: none;
-=======
+    }
     .cards-recipe__text {
         width: 100%;
->>>>>>> c410fb6636ccbb0784dd0f7064f1039d0f5adf0f
     }
 }
 
@@ -1363,13 +1354,8 @@
 }
 
 @media only screen and (max-width: 425px) {
-<<<<<<< HEAD
     .index .header {
-        background-position: top center;
-=======
-    .header {
         background-position: top -60px center;
->>>>>>> c410fb6636ccbb0784dd0f7064f1039d0f5adf0f
     }
     .for-14day-program {
         background-position: center center;
