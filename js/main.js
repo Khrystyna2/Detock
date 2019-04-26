@@ -92,4 +92,22 @@ $(document).ready(function () {
         });
     }
 
+    $('input[name=promo-code]').on('click', function(){
+        if ( $(this).is(":checked")) {
+            $('#promo-code').slideDown();
+        } else {
+            $('#promo-code').slideUp();
+        }
+    });
+
+    $('input[name=payment-method]').on('click', function(){
+        if ( $(this).is(":checked") && $(this).is('#paymentDetails')) {
+            $('.get-requisiter').slideDown();
+            $('.payment-method__img_group').fadeOut(100);
+        } else {
+            $('.get-requisiter').slideUp();
+            $('.payment-method__img_group').fadeIn(1800);
+        }
+    });
+
 });
