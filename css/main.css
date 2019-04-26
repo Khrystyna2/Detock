@@ -2264,11 +2264,11 @@ body {
     margin-bottom: 1.05rem;
 }
 
-.payment-method li {
+.payment-method > li {
     margin-right: 1.6rem;
 }
 
-.payment-method li:last-child {
+.payment-method >li:last-child {
     margin-right: 0;
 }
 

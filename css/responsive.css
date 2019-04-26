@@ -607,6 +607,14 @@
         text-align: center;
         margin: 0 auto 2rem;
     }
+
+    .label-radiobox {
+        min-width: 20rem;
+    }
+
+    .payment-method__img_group {
+        right: -82%;
+    }
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -1021,7 +1029,11 @@
 
     .payment-method__fondy,
     .get-requisiter {
-        margin-top: 1.6rem;
+        margin-top: 1.4rem;
+        padding-top: 1.4rem;
+        border-top: 1px solid #C4C4C4;
+        padding-left: 0;
+        border-left: none;
     }
 
     .payment-method__img_group {
@@ -1029,6 +1041,12 @@
         right: auto;
         margin-top: 1rem;
         left: 0;
+    }
+
+    .payment-method__img_group {
+        margin-top: 1rem;
+        width: 100%;
+        padding-left: 1rem;
     }
 }
 
@@ -1412,13 +1430,16 @@
         margin-top: 2px;
     }
 
-    .payment-method__img_group {
-        right: -92%;
-        margin-top: 0;
-    }
     .make-order__form {
-        padding: 4.2rem 1.3rem;
-    }
+    padding: 4.2rem 1.3rem;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+}
+
+.make-order__form p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
 }
 
 @media only screen and (max-width: 425px) {
